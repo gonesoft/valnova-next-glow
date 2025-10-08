@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import valnovaLogo from "@/assets/valnova-logo.jpg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,12 +42,16 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex-shrink-0">
-            <span className="text-2xl font-['Playfair_Display'] font-bold text-primary">
-              VALNOVA
-              <span className="text-secondary"> PARTNERS</span>
-            </span>
-          </div>
+          <button
+            onClick={() => scrollToSection("#home")}
+            className="flex-shrink-0 cursor-pointer"
+          >
+            <img
+              src={valnovaLogo}
+              alt="Valnova Partners"
+              className="h-10 w-auto"
+            />
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
