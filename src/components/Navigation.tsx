@@ -67,10 +67,9 @@ const Navigation = () => {
                 </button>
               ))}
               <Button
-                variant="default"
                 size="sm"
                 onClick={() => scrollToSection("#contact")}
-                className="ml-4 bg-gradient-accent hover:shadow-accent"
+                className="ml-4 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shadow-accent"
               >
                 Get in Touch
               </Button>
@@ -108,8 +107,7 @@ const Navigation = () => {
               </button>
             ))}
             <Button
-              variant="default"
-              className="w-full mt-2 bg-gradient-accent"
+              className="w-full mt-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shadow-accent"
               onClick={() => scrollToSection("#contact")}
             >
               Get in Touch
