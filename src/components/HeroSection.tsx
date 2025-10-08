@@ -44,9 +44,8 @@ const HeroSection = () => {
             </Button>
             <Button
               size="lg"
-              variant="outline"
               onClick={() => scrollToSection("#contact")}
-              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shadow-accent"
             >
               Contact Us
             </Button>
