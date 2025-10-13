@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, GraduationCap } from "lucide-react";
+import { Award } from "lucide-react";
+import nicolasPhoto from "@/assets/nicolas.jpeg";
+import franckPhoto from "@/assets/franck.jpeg";
 
 const TeamSection = () => {
   const team = [
@@ -7,6 +9,7 @@ const TeamSection = () => {
       name: "Nicolas Diaz Garelli",
       title: "Partner",
       credentials: "CFA",
+      image: nicolasPhoto,
       bio: "Nicolas is an economist specializing in Corporate Finance and Asset Management. He has more than 12 years of experience in private equity deals, valuation, investment structuring, project finance and value-based management. He holds the CFA designation (Chartered Financial Analyst), globally recognized as the gold standard in the investment management profession. He is the co-founder of two fast-growing companies in the healthcare industry in the Dominican Republic.",
       highlights: ["CFA Institute Member", "12+ Years Experience", "Healthcare Entrepreneur"],
     },
@@ -14,6 +17,7 @@ const TeamSection = () => {
       name: "Franck Diaz Garelli",
       title: "Partner",
       credentials: "PhD",
+      image: franckPhoto,
       bio: "Franck is an assistant professor of health informatics analytics focused on translating research into applications that support business development and healthcare operations improvement through advanced data analytics. His work supports the development of learning health systems worldwide. Franck has conducted world-class research including the development of new data science methodologies for data quality assessment.",
       highlights: ["PhD in Health Informatics", "AMIA Member", "EPIC EHR Certified"],
     },
@@ -41,9 +45,11 @@ const TeamSection = () => {
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="flex-shrink-0">
-                    <div className="w-20 h-20 rounded-full bg-gradient-accent flex items-center justify-center shadow-accent">
-                      <GraduationCap className="h-10 w-10 text-accent-foreground" />
-                    </div>
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-20 h-20 rounded-full object-cover shadow-accent"
+                    />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-card-foreground mb-1">
