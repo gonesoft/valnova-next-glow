@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import valnovaLogo from "@/assets/valnova-logo-original.png";
+import valnovaLogo from "@/assets/valnova-logo-new.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
