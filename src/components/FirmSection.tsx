@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, TrendingUp, Users, Award } from "lucide-react";
+import valuesBackground from "@/assets/values-background.jpg";
 
 const FirmSection = () => {
   const highlights = [
@@ -59,28 +60,41 @@ const FirmSection = () => {
         </div>
 
         {/* Values Grid */}
-        <div className="bg-primary/5 rounded-2xl p-8 sm:p-12">
-          <h3 className="text-3xl font-['Playfair_Display'] font-bold text-center text-primary mb-12">
-            Our Values
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              "Independence",
-              "Creativity",
-              "Excellence",
-              "Objectivity",
-              "Agility",
-              "Innovation",
-              "Entrepreneurship",
-              "Confidentiality",
-            ].map((value, index) => (
-              <div
-                key={index}
-                className="text-center p-4 rounded-lg hover:bg-background transition-colors"
-              >
-                <p className="text-lg font-semibold text-foreground">{value}</p>
-              </div>
-            ))}
+        <div 
+          className="relative rounded-2xl p-8 sm:p-12 overflow-hidden"
+          style={{
+            backgroundImage: `url(${valuesBackground})`,
+            backgroundAttachment: 'fixed',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+          }}
+        >
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/50"></div>
+          
+          <div className="relative z-10">
+            <h3 className="text-3xl font-['Playfair_Display'] font-bold text-center text-white mb-12">
+              Our Values
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                "Independence",
+                "Creativity",
+                "Excellence",
+                "Objectivity",
+                "Agility",
+                "Innovation",
+                "Entrepreneurship",
+                "Confidentiality",
+              ].map((value, index) => (
+                <div
+                  key={index}
+                  className="text-center p-4 rounded-lg hover:bg-white/10 transition-all backdrop-blur-sm"
+                >
+                  <p className="text-lg font-semibold text-white">{value}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
