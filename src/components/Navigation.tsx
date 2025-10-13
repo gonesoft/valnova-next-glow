@@ -49,7 +49,7 @@ const Navigation = () => {
             <img
               src={valnovaLogo}
               alt="Valnova Partners"
-              className="h-10 w-auto"
+              className="w-[300px] h-[150px]"
             />
           </button>
 
