@@ -37,7 +37,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               onClick={() => scrollToSection("#services")}
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shadow-accent group"
+              className="bg-secondary hover:bg-secondary/90 text-white font-semibold shadow-accent group"
             >
               Our Services
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -45,7 +45,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               onClick={() => scrollToSection("#contact")}
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shadow-accent"
+              className="bg-secondary hover:bg-secondary/90 text-white font-semibold shadow-accent"
             >
               Contact Us
             </Button>
