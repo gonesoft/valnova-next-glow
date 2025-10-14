@@ -95,5 +95,34 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    top: 0 !important;
   }
+}
+
+/* Google Translate Widget Styling */
+#google_translate_element {
+  display: inline-block !important;
+}
+
+#google_translate_element .goog-te-gadget {
+  font-family: inherit !important;
+}
+
+#google_translate_element select {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(var(--border));
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: none !important;
 }

@@ -107,7 +107,6 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <div id="google_translate_element" className="px-3 py-2"></div>
             <Button
               className="w-full mt-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shadow-accent"
               onClick={() => scrollToSection("#contact")}
