@@ -60,7 +60,11 @@ const Navigation = () => {
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors relative group"
+                  className={`px-4 py-2 text-sm font-medium transition-colors relative group ${
+                    isScrolled 
+                      ? "text-foreground/80 hover:text-foreground" 
+                      : "text-white/90 hover:text-white"
+                  }`}
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
@@ -102,7 +106,11 @@ const Navigation = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-3 py-2 text-base font-medium text-foreground/80 hover:text-foreground hover:bg-muted rounded-md transition-colors"
+                className={`block w-full text-left px-3 py-2 text-base font-medium hover:bg-muted rounded-md transition-colors ${
+                  isScrolled 
+                    ? "text-foreground/80 hover:text-foreground" 
+                    : "text-white/90 hover:text-white"
+                }`}
               >
                 {item.label}
               </button>
