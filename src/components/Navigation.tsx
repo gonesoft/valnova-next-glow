@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import valnovaLogo from "@/assets/valnova-logo-new.png";
+import valnovaLogoWhite from "@/assets/valnova-logo-white.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,9 +48,9 @@ const Navigation = () => {
             className="flex-shrink-0 cursor-pointer"
           >
             <img
-              src={valnovaLogo}
+              src={isScrolled ? valnovaLogo : valnovaLogoWhite}
               alt="Valnova Partners"
-              className="w-[300px] h-[150px]"
+              className={isScrolled ? "w-[300px] h-[150px]" : "w-[300px] h-[150px]"}
             />
           </button>
 
