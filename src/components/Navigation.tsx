@@ -66,6 +66,7 @@ const Navigation = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
                 </button>
               ))}
+              <div id="google_translate_element" className="ml-2"></div>
               <Button
                 size="sm"
                 onClick={() => scrollToSection("#contact")}
@@ -106,6 +107,7 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <div id="google_translate_element" className="px-3 py-2"></div>
             <Button
               className="w-full mt-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shadow-accent"
               onClick={() => scrollToSection("#contact")}
