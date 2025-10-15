@@ -71,7 +71,32 @@ const Navigation = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
                 </button>
               ))}
-              <div id="google_translate_element" className="ml-2"></div>
+              
+              {/* Custom Language Switcher */}
+              <div className="gt-switch ml-2">
+                <button className="gt-current" type="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span className="gt-flag">🇺🇸</span>
+                  <span className="gt-label">ENGLISH</span>
+                  <span className="gt-caret">▾</span>
+                </button>
+                <ul className="gt-menu" role="listbox" hidden>
+                  <li role="option" data-lang="en" data-flag="🇺🇸">ENGLISH</li>
+                  <li role="option" data-lang="es" data-flag="🇪🇸">ESPAÑOL</li>
+                  <li role="option" data-lang="ca" data-flag="🇪🇸">CATALÀ</li>
+                  <li role="option" data-lang="it" data-flag="🇮🇹">ITALIANO</li>
+                  <li role="option" data-lang="fr" data-flag="🇫🇷">FRANÇAIS</li>
+                  <li role="option" data-lang="de" data-flag="🇩🇪">DEUTSCH</li>
+                  <li role="option" data-lang="ru" data-flag="🇷🇺">РУССКИЙ</li>
+                  <li role="option" data-lang="ja" data-flag="🇯🇵">日本語</li>
+                </ul>
+                <small className="gt-branding">
+                  Powered by <a href="https://translate.google.com" target="_blank" rel="noopener">Google&nbsp;Translate</a>
+                </small>
+              </div>
+              
+              {/* Hidden Google element (kept in DOM for the engine) */}
+              <div id="google_translate_element" className="gt-hidden"></div>
+              
               <Button
                 size="sm"
                 onClick={() => scrollToSection("#contact")}
