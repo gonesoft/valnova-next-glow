@@ -56,9 +56,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Address</h4>
                     <p className="text-sm text-muted-foreground">
-                      Av. Roberto Pastoriza #20, Naco
-                      <br />
-                      Santo Domingo, República Dominicana
+                      C/Roberto Pastoriza, No. 457, Villa Palmera Business Center, Local 907-A, Piantini, Sto. Dgo. RD.
                     </p>
                   </div>
                 </CardContent>
