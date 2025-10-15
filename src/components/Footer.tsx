@@ -9,7 +9,9 @@ const Footer = () => {
             <img 
               src={valnovaLogo} 
               alt="Valnova Partners" 
-              className="h-12 mb-4"
+              className="mb-4"
+              width="300"
+              height="150"
             />
             <p className="text-primary-foreground/80 text-sm">
               Boutique advisory firm specializing in corporate finance, investment management,
