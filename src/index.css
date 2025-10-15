@@ -155,6 +155,28 @@ All colors MUST be HSL.
   display: none !important;
 }
 
+/* Hide all "Powered by" text variants */
+.goog-te-gadget span {
+  font-size: 0 !important;
+}
+
+.goog-te-gadget span > span {
+  font-size: 0.875rem !important;
+}
+
+/* Hide specific branding elements */
+#google_translate_element .goog-te-gadget-simple span:not([style*="color"]) {
+  display: none !important;
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+  display: none !important;
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+  display: none !important;
+}
+
 .goog-te-gadget .goog-te-combo {
   background-color: transparent !important;
   color: inherit !important;
