@@ -1,12 +1,16 @@
+import valnovaLogo from "@/assets/valnova-logo-white.png";
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-['Playfair_Display'] font-bold mb-4">
-              VALNOVA <span className="text-secondary">PARTNERS</span>
-            </h3>
+            <img 
+              src={valnovaLogo} 
+              alt="Valnova Partners" 
+              className="h-12 mb-4"
+            />
             <p className="text-primary-foreground/80 text-sm">
               Boutique advisory firm specializing in corporate finance, investment management,
               and data science innovation.
