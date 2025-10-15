@@ -32,8 +32,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li>Av. Roberto Pastoriza #20, Naco</li>
-              <li>Santo Domingo, República Dominicana</li>
+              <li>C/Roberto Pastoriza, No. 457, Villa Palmera Business Center, Local 907-A | Piantini, Santo Domingo. República Dominicana</li>
               <li className="pt-2">
                 <a
                   href="mailto:ndiaz@valnovapartners.com"
