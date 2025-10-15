@@ -14,8 +14,7 @@ const Footer = () => {
               height="150"
             />
             <p className="text-primary-foreground/80 text-sm">
-              Boutique advisory firm specializing in corporate finance, investment management,
-              and data science innovation.
+              Valnova Partners is a boutique advisory firm specializing in corporate finance, investment management, and data-driven innovation.
             </p>
           </div>
 
